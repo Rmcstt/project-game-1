@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.game-board {
+  width: 100%;
+  height: 31.25rem;
+  border-bottom: .9375rem solid rgb(3, 178, 35);
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(#87ceeb, #e0f6ff);
+}
+
+.pipe {
+  position: absolute;
+  bottom: 0;
+  width: 5rem;
+  right: -5rem;
+  animation: pipe-animation 1.5s infinite linear;
+}
+
+.mario {
+  width: 9.375rem;
+  position: absolute;
+  bottom: 0;
+
+}
+
+.jump {
+  animation: jump 500ms infinite ease-out;
+}
+
+.clouds {
+  position: absolute;
+  width: 34.375rem;
+  animation: clouds-animation 20s infinite linear;
+}
+
+.clouds2 {
+  position: absolute;
+  width: 34.375rem;
+  animation: clouds-animation 15s infinite linear;
+}
+
+.wasted {
+  width: 15rem;
+  visibility: hidden;
+}
+
+.show {
+  width: 15rem;
+  visibility: visible;
+}
+
+.bottom {
+  text-align: center;
+
+  padding: 350px 0;
+  background-color: black;
+}
+
+#acesse {
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-size: 26px;
+  letter-spacing: -1px;
+  word-spacing: 1px;
+  color: #fffefe;
+  font-weight: 700;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+}
+
+#acesse2 {
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-size: 26px;
+  letter-spacing: -1px;
+  word-spacing: 1px;
+  color: #fffefe;
+  font-weight: 700;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+}
+
+.in {
+  width: 6rem;
+  left: 25rem;
+}
+
+@keyframes pipe-animation {
+  from {
+    right: -5rem;
+
+  }
+
+  to {
+    right: 100%;
+
+
+  }
+}
+
+@keyframes jump {
+  0% {
+    bottom: 0;
+  }
+
+  40% {
+    bottom: 13.25rem;
+  }
+
+  50% {
+    bottom: 13.25rem;
+  }
+
+  60% {
+    bottom: 13.25rem;
+  }
+
+  100% {
+    bottom: 0;
+  }
+}
+
+@keyframes clouds-animation {
+  from {
+    right: -34.375rem;
+  }
+
+  to {
+    right: 100%;
+  }
+}
